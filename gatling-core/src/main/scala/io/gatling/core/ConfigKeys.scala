@@ -109,6 +109,7 @@ object ConfigKeys {
       val UseNativeTransport = "gatling.http.ahc.useNativeTransport"
       val EnableZeroCopy = "gatling.http.ahc.enableZeroCopy"
       val TcpNoDelay = "gatling.http.ahc.tcpNoDelay"
+      val TcpKeepAlive = "gatling.http.ahc.tcpKeepAlive"
       val SoReuseAddress = "gatling.http.ahc.soReuseAddress"
       val Allocator = "gatling.http.ahc.allocator"
       val MaxThreadLocalCharBufferSize = "gatling.http.ahc.maxThreadLocalCharBufferSize"

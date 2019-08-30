@@ -202,6 +202,7 @@ object GatlingConfiguration extends StrictLogging {
           useNativeTransport = config.getBoolean(http.ahc.UseNativeTransport),
           enableZeroCopy = config.getBoolean(http.ahc.EnableZeroCopy),
           tcpNoDelay = config.getBoolean(http.ahc.TcpNoDelay),
+          tcpKeepAlive = config.getBoolean(http.ahc.TcpKeepAlive),
           soReuseAddress = config.getBoolean(http.ahc.SoReuseAddress),
           allocator = config.getString(http.ahc.Allocator),
           maxThreadLocalCharBufferSize = config.getInt(http.ahc.MaxThreadLocalCharBufferSize)
@@ -368,6 +369,7 @@ final case class AdvancedConfiguration(
     useNativeTransport:           Boolean,
     enableZeroCopy:               Boolean,
     tcpNoDelay:                   Boolean,
+    tcpKeepAlive:                 Boolean,
     soReuseAddress:               Boolean,
     allocator:                    String,
     maxThreadLocalCharBufferSize: Int
