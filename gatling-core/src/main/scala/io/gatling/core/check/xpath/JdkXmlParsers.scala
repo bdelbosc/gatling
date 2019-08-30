@@ -75,7 +75,7 @@ class JdkXmlParsers(configuration: GatlingConfiguration) {
 
         override def getPrefix(uri: String): String = throw new UnsupportedOperationException
 
-        override def getPrefixes(uri: String): java.util.Iterator[_] = throw new UnsupportedOperationException
+        override def getPrefixes(uri: String): java.util.Iterator[String] = throw new UnsupportedOperationException
       })
     }
 
